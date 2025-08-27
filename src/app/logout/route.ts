@@ -11,9 +11,22 @@ export async function GET(request: Request) {
     {
       cookies: {
         get: (name: string) => cookieStore.get(name)?.value,
-        set: (name: string, value: string, options: any) =>
+        set: (name: string, value: string, options: { 
+          domain?: string; 
+          path?: string; 
+          maxAge?: number; 
+          httpOnly?: boolean; 
+          secure?: boolean; 
+          sameSite?: 'strict' | 'lax' | 'none' 
+        } = {}) =>
           cookieStore.set({ name, value, ...options }),
-        remove: (name: string, options: any) =>
+        remove: (name: string, options: { 
+          domain?: string; 
+          path?: string; 
+          httpOnly?: boolean; 
+          secure?: boolean; 
+          sameSite?: 'strict' | 'lax' | 'none' 
+        } = {}) =>
           cookieStore.set({ name, value: "", ...options, maxAge: 0 }),
       },
     }
