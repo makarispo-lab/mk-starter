@@ -1,5 +1,5 @@
 // src/lib/supabase/server.ts
-import { cookies } from "next/headers";
+/*import { cookies } from "next/headers";
 import { createServerClient } from "@supabase/ssr";
 
 export function createSupabaseServerClient() {
@@ -35,4 +35,5 @@ export function createSupabaseServerClient() {
     }
   );
 }
+
   
