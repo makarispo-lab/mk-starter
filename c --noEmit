@@ -1,0 +1,3 @@
+[33m5f941d3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m fix: corrigir tipos TypeScript para deploy no Vercel - Substituir 'any' por tipos específicos para opções de cookies - Corrigir erros de ESLint @typescript-eslint/no-explicit-any - Permitir deploy bem-sucedido no Vercel
+[33m4d55938[m feat: implementa sistema completo de autenticação com Supabase
+[33mac4be2d[m Initial commit from Create Next App
